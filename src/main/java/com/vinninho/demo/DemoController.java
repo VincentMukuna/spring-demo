@@ -21,7 +21,7 @@ public class DemoController {
     }
 
     @GetMapping("/find/{id}")
-    public Customer findCustomer(@PathVariable Integer id) {
+    public Customer findCustomer(@PathVariable Long id) {
         return customerRepository.findCustomerById(id);
     }
 }
